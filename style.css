@@ -279,10 +279,14 @@ footer i {
 footer p {
     margin: 0;
 }
-msg {
-    white-space: nowrap; /* Prevents text from wrapping onto multiple lines */
-    overflow: hidden;    /* Ensures overflow doesn't break the layout */
-    text-overflow: ellipsis; /* Optional: adds "..." if the text overflows */
-    display: inline-block; /* Makes sure the span behaves like inline content */
+#contact-form {
+    display: flex; /* Use flex to align elements horizontally */
+    flex-direction: column; /* Stack vertically but don't allow wrapping */
+    align-items: center; /* Center align */
+}
+
+#msg {
+    white-space: nowrap;  /* Prevent text wrapping */
+    margin-top: 10px; /* Small space between form and message */
 }
 
