@@ -1,0 +1,281 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kode Mono', monospace;
+    line-height: 1.6;
+    background: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5c8d; /* Neon pink on hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff5c8d, #6b72f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+/* Header Styling */
+.header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Hero Title and Subtitle */
+.hero h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 120px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background: #111;
+    text-align: center;
+    font-family:'Mina', sans-serif;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff5c8d;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-family: 'Mina', sans-serif;
+}
+
+/* Futuristic Image Styling */
+.futuristic-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures image fits well */
+    border: 4px solid transparent; /* Initial transparent border */
+    background-image: linear-gradient(45deg, #ff5c8d, #6b72f0); /* Neon gradient */
+    background-origin: border-box;
+    background-clip: content-box; /* Keeps the background inside the image */
+    box-shadow: 0 0 15px rgba(255, 92, 141, 0.6), 0 0 25px rgba(255, 92, 141, 0.8), 0 0 35px rgba(255, 92, 141, 1); /* Glowing effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    margin-bottom: 20px;
+}
+
+.futuristic-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 0 40px rgba(255, 92, 141, 1); /* Stronger glow on hover */
+}
+
+/* Work Section */
+#work {
+    padding: 60px 20px;
+    background: #222;
+    text-align: center;
+    font-family: 'Mina', sans-serif; /* Apply Stellar font here */
+}
+
+#work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #6b72f0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #111;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b72f0;
+}
+
+/* Contact Form Styling */
+#contact form input,
+#contact form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background: #ff5c8d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#contact form button:hover {
+    background: #ff4d74;
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff5c8d; /* Neon pink on hover */
+}
+
+/* Footer Styling */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+footer i {
+    color: #ff5c8d; /* Heart icon color */
+    margin: 0 5px;
+}
+
+footer p {
+    margin: 0;
+}
