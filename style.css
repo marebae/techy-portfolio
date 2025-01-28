@@ -241,21 +241,56 @@ nav ul li a:hover {
     background: #ff4d74;
 }
 
-/* Social Media Icons Style */
+/* Parent container for social media and email sections */
+.social-email-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0; /* Ensures it stretches across the entire width */
+    padding: 0 20px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Email Section */
+.email-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 20px; /* Add some space between social media and email section */
+}
+
+/* Email Link Styling */
+.email-section a {
+    color: #8d42f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-section a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Section */
 .social-media {
-    text-align: center;
-    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icons {
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
 /* General Icon Style */
 .social-icon {
-    font-size: 1.5rem; /* Set font size to 1.5rem */
+    font-size: 1.5rem;
     padding: 15px;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -265,23 +300,23 @@ nav ul li a:hover {
 
 /* Icon Colors */
 .youtube {
-    background-color: #8d42f5; /* Color for YouTube */
-    color: white; /* White icon color */
+    background-color: #8d42f5;
+    color: white;
 }
 
 .github {
-    background-color: #e0008e; /* Color for GitHub */
-    color: white; /* White icon color */
+    background-color: #e0008e;
+    color: white;
 }
 
 .linkedin {
-    background-color: #6ed6f0; /* Color for LinkedIn */
-    color: white; /* White icon color */
+    background-color: #6ed6f0;
+    color: white;
 }
 
 .instagram {
-    background-color: #1b1c21; /* Color for Instagram */
-    color: white; /* White icon color */
+    background-color: #1b1c21;
+    color: white;
 }
 
 /* Hover Effects */
@@ -319,45 +354,7 @@ nav ul li a:hover {
         transform: scale(1);
         opacity: 0.7;
     }
-}
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .social-icons {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .social-icon {
-        font-size: 1.3rem; /* Adjust for smaller screen size */
-    }
-}
-/* Email Section Style */
-.email-section {
-    position: fixed;
-    bottom: 20px;  /* Adjust distance from bottom */
-    left: 20px;    /* Adjust distance from left */
-    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
-    color: #fff;   /* Text color (white) */
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-/* Email Link Styling */
-.email-section a {
-    color: #8d42f5;  /* Color for the email link (You can change this) */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold;
-}
-
-.email-section a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-     
 }
 /* Custom Font Awesome Webfonts */
 @font-face {
