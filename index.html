@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>  
+    <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mina&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
@@ -25,125 +24,114 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <header class="header">
+            <h1>Welcome to My Portfolio!</h1>
+            <p>Let's build something amazing together.</p>
         </header>
-        <h1>Welcome to My Portfolio!</h1>
-        <p>Let's build something amazing together.</p>
+
+        <!-- Social Media and Email Section - ONLY IN HOME PAGE -->
+        <section id="social-email-home" class="social-email-container">
+            <div class="social-media">
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@travelwithmaryyy" target="_blank" class="social-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/marebae" target="_blank" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mary-bauta-a76753292/" target="_blank" class="social-icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/marybauta/?hl=en" target="_blank" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email Section for Inquiries -->
+            <div class="email-section">
+                <p>For inquiries: <a href="mailto:marybauta5@gmail.com">marybauta5@gmail.com</a></p>
+            </div>
+        </section>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <img src="images/me2.JPG" alt="Me!" class="futuristic-image">
-        <p>Hi! My name is Mary! I'm from Miami. I am currently a Junior at the University of Central Florida. At UCF, I am a member of a couple clubs like SHPE and KnightHacks. As for my future career, I'm more drawn to front end development however, I would love to learn more about consulting and cybersecurity. I'm an ambitious and hard-working person. I love coming up with ideas and helping others achieve a dream. I am eager to learn more in each area I am not as well-versed in. I thrive best in team environments due to my experience in team projects. My skills for backend development would include Python, Java, C. For front-end development, I have experience in HTML, CSS, and Javascript. </p>
+        <p>Hi! My name is Mary! I'm from Miami...</p>
     </section>
 
     <!-- Work Section -->
     <section id="work">
         <h2>My Work</h2>
         <div class="gallery">
-            <!-- Project 1 -->
             <div class="gallery-item">
-                <img src="images/1st Portfolio Website.png" alt="First project I built was my Portfolio Website. I utilized HTML, CSS, and Javascript for this project. The most challenging part of this project was to figure out how to link my google sheet to my website. My favorite part of this website was choosing the font, images, and logo I want going to use. ">
+                <img src="images/1st Portfolio Website.png" alt="First project">
                 <div class="overlay">
                     <p>Portfolio Website</p>
                 </div>
             </div>
-            <!-- Project 2 -->
             <div class="gallery-item">
-                <img src="images/SensAi App.png" alt="Second project I built was a team-collaborated project for a hackathon. This project was an AI-powered app. The app leverages computer vision to recognize objects in the person's path, guiding them around detected obstacles using voice commands. It also allows users to scan text, which is then read out loud to them. I was in charge of the front-end developement for this app. This app was built with CSS, Javascript, Tensorflow, React, and Tesseract.js. ">
+                <img src="images/SensAi App.png" alt="SensAi App">
                 <div class="overlay">
                     <p>SensAi App</p>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id ="contact-form"name="submit-to-google-sheet">
+        <form id="contact-form" name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Your Name">
             <input type="email" name="Email" placeholder="Your Email">
-            <textarea type ="message" placeholder="Your Message"></textarea>
+            <textarea type="message" placeholder="Your Message"></textarea>
             <button type="submit">Send</button>
-            <span id ="msg"></span>
-<!-- Social Media Links and Email Section -->
-<section id="social-email">
-    <div class="social-email-container">
-        <!-- Social Media Links Section -->
-        <section id="social-media" class="social-media">
-            <div class="social-icons">
-                <a href="https://www.youtube.com/@travelwithmaryyy" target="_blank" class="social-icon youtube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://github.com/marebae" target="_blank" class="social-icon github">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mary-bauta-a76753292/" target="_blank" class="social-icon linkedin">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/marybauta/?hl=en" target="_blank" class="social-icon instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- Email Section for Inquiries -->
-        <div class="email-section">
-            <p>For inquiries: <a href="mailto:marybauta5@gmail.com">marybauta5@gmail.com</a></p>
-        </div>
-    </div>
-</section>
+            <span id="msg"></span>
         </form>
     </section>
-    <!-- Hidden iframe to prevent redirect -->
-    <iframe name="hidden_iframe" style="display:none;"></iframe>
 
+    <!-- Footer Section for Copyright -->
+    <footer>
+        <p>Copyright ©️ <span id="current-year"></span> Mary. Made with <i class="fa-solid fa-heart"></i> by Mary</p>
+    </footer>
 
-</section>
-
-
-<!-- Footer Section for Copyright -->
-<footer>
-    <p>Copyright ©️ <span id="current-year"></span> Mary. Made with <i class="fa-solid fa-heart"></i> by Mary</p>
-</footer>
-
-<!-- Google Sheets Form Handling -->
-<script>
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwX9GKKUSoTLtdhgT5CjqKjYWLSRpAhE0_W_uY_PUiTuLFDs9dcfh3TnIKiJcXhmvqD/exec';
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById('msg');
+    <!-- Google Sheets Form Handling -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwX9GKKUSoTLtdhgT5CjqKjYWLSRpAhE0_W_uY_PUiTuLFDs9dcfh3TnIKiJcXhmvqD/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
         
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        
-        fetch(scriptURL, { 
-            method: 'POST', 
-            body: new FormData(form) 
-        })
-            .then(response => response.json())
-            .then(result => {
-                if(result.result === "success"){
-                    msg.innerHTML = "Thank you for your message!";
-                }else{
-                    msg.innerHTML = "Oops! Something went wrong,";
-                }
-                
-                setTimeout(function() {
-                    msg.innerHTML = "";
-                }, 5000);
-
-                form.reset();
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form) 
             })
-            .catch(error => {
-                console.error('Error!', error.message);
-                msg.innerHTML = "Oops! Something went wrong.";
-            });
-    });
-    
-    // Dynamically set the current year in the footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+                .then(response => response.json())
+                .then(result => {
+                    if(result.result === "success"){
+                        msg.innerHTML = "Thank you for your message!";
+                    }else{
+                        msg.innerHTML = "Oops! Something went wrong,";
+                    }
+                    
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000);
 
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    msg.innerHTML = "Oops! Something went wrong.";
+                });
+        });
+
+        // Dynamically set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
