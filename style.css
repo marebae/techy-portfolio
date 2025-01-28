@@ -420,7 +420,7 @@ footer p {
     /* Align social media icons vertically along the side */
     .social-icons {
         display: flex;
-        flex-direction: column; /* Stack the icons vertically */
+        flex-direction: row; /* Stack the icons vertically */
         gap: 15px;
         align-items: center;
     }
@@ -433,7 +433,7 @@ footer p {
         border-radius: 50%;
         transition: transform 0.3s ease;
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         color: white;
     }
 
