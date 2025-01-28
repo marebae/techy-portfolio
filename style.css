@@ -483,11 +483,7 @@ footer p {
     }
 }
 
-/* Further Adjustments for Smaller Screens (Mobile Portrait) */
-@media (max-width: 480px) {
-    /* Smaller icons for mobile */
-    .social-icon {
-        font-size: 1.4rem;
+
 /* Fading out social media icons on small screens (iPhone Mini, iPhone SE) */
 @media (max-width: 480px) {
     #social-email-home {
