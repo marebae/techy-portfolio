@@ -140,22 +140,7 @@
 
         // Dynamically set the current year in the footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
-            }
-        // JavaScript to toggle the visibility of the email section with pop-in/out effect
-const emailButton = document.getElementById('emailButton');
-const emailSection = document.querySelector('.email-section');
-
-// Toggle the pop-in/out animation when the button is clicked
-emailButton.addEventListener('click', () => {
-    if (emailSection.classList.contains('show')) {
-        emailSection.classList.add('hide'); // Add hide class to trigger pop-out
-        setTimeout(() => {
-            emailSection.classList.remove('show', 'hide'); // Remove show and hide after animation ends
-        }, 500); // Match the duration of the pop-out animation
-    } else {
-        emailSection.classList.add('show'); // Add show class to trigger pop-in
     }
-});
 
         });
     </script>
