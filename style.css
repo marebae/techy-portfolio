@@ -332,6 +332,30 @@ nav ul li a:hover {
         font-size: 1.3rem; /* Adjust for smaller screen size */
     }
 }
+/* Email Section Style */
+.email-section {
+    position: fixed;
+    bottom: 20px;  /* Adjust distance from bottom */
+    left: 20px;    /* Adjust distance from left */
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+    color: #fff;   /* Text color (white) */
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Email Link Styling */
+.email-section a {
+    color: #8d42f5;  /* Color for the email link (You can change this) */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.email-section a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
 
      
 }
