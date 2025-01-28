@@ -488,6 +488,22 @@ footer p {
     /* Smaller icons for mobile */
     .social-icon {
         font-size: 1.4rem;
+/* Fading out social media icons on small screens (iPhone Mini, iPhone SE) */
+@media (max-width: 480px) {
+    #social-email-home {
+        opacity: 0; /* Fades out the whole section */
+        pointer-events: none; /* Prevents interaction */
+        transition: opacity 1s ease-in-out; /* Adds fade effect */
+    }
+}
+
+/* Alternatively, you can hide the social media icons entirely (by display none) */
+@media (max-width: 480px) {
+    #social-email-home {
+        display: none; /* This will hide the whole section completely */
+    }
+}
+
         padding: 10px;
     }
 }
