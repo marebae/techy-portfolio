@@ -240,33 +240,51 @@ nav ul li a:hover {
 #contact form button:hover {
     background: #ff4d74;
 }
-
-/* Social Media Links */
-/* Social Media Container */
+/* Social Media Icons Style */
 .social-media {
     text-align: center;
     margin: 50px 0;
 }
 
-/* Social Icons Styling */
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
+/* General Icon Style */
 .social-icon {
-    font-size: 3rem;
+    font-size: 2rem; /* Adjust the size of the icons here */
     padding: 15px;
     border-radius: 50%;
-    background-color: #1a1a1a;
-    color: #fff;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
+    color: white; /* Default icon color */
 }
 
-/* Hover Effect */
+/* Icon Colors */
+.youtube {
+    background-color: #FF0000;
+    color: #FFF; /* Change icon color to white on red background */
+}
+
+.github {
+    background-color: #333;
+    color: #FFF;
+}
+
+.linkedin {
+    background-color: #0077B5;
+    color: #FFF;
+}
+
+.instagram {
+    background-color: #E4405F;
+    color: #FFF;
+}
+
+/* Hover Effects */
 .social-icon:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -285,23 +303,6 @@ nav ul li a:hover {
     background: linear-gradient(45deg, #ff0080, #00c6ff);
     filter: blur(8px);
     animation: glow 1.5s infinite;
-}
-
-/* Icon Color & Custom Styling */
-.youtube {
-    background-color: #FF0000;
-}
-
-.github {
-    background-color: #333;
-}
-
-.linkedin {
-    background-color: #0077B5;
-}
-
-.instagram {
-    background-color: #E4405F;
 }
 
 /* Glow Animation */
@@ -328,8 +329,10 @@ nav ul li a:hover {
     }
 
     .social-icon {
-        font-size: 2.5rem;
+        font-size: 1.8rem; /* Adjust for smaller screen size */
     }
+}
+     
 }
 /* Custom Font Awesome Webfonts */
 @font-face {
