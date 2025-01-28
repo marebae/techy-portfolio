@@ -240,6 +240,7 @@ nav ul li a:hover {
 #contact form button:hover {
     background: #ff4d74;
 }
+
 /* Social Media Icons Style */
 .social-media {
     text-align: center;
@@ -254,34 +255,33 @@ nav ul li a:hover {
 
 /* General Icon Style */
 .social-icon {
-    font-size: 2rem; /* Adjust the size of the icons here */
+    font-size: 1.5rem; /* Set font size to 1.5rem */
     padding: 15px;
     border-radius: 50%;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    color: white; /* Default icon color */
 }
 
 /* Icon Colors */
 .youtube {
-    background-color: #FF0000;
-    color: #FFF; /* Change icon color to white on red background */
+    background-color: #8d42f5; /* Color for YouTube */
+    color: white; /* White icon color */
 }
 
 .github {
-    background-color: #333;
-    color: #FFF;
+    background-color: #e0008e; /* Color for GitHub */
+    color: white; /* White icon color */
 }
 
 .linkedin {
-    background-color: #0077B5;
-    color: #FFF;
+    background-color: #6ed6f0; /* Color for LinkedIn */
+    color: white; /* White icon color */
 }
 
 .instagram {
-    background-color: #E4405F;
-    color: #FFF;
+    background-color: #1b1c21; /* Color for Instagram */
+    color: white; /* White icon color */
 }
 
 /* Hover Effects */
@@ -329,9 +329,10 @@ nav ul li a:hover {
     }
 
     .social-icon {
-        font-size: 1.8rem; /* Adjust for smaller screen size */
+        font-size: 1.3rem; /* Adjust for smaller screen size */
     }
 }
+
      
 }
 /* Custom Font Awesome Webfonts */
