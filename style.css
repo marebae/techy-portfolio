@@ -118,76 +118,34 @@ nav ul li a:hover {
     box-shadow: 0 0 40px rgba(255, 92, 141, 1);
 }
 
-/* Work Section */
-#work {
+/* Resume Section */
+#resume {
     padding: 60px 20px;
     background: #222;
     text-align: center;
 }
 
-#work h2 {
+#resume h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #6b72f0;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px;
+.download-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, #ff5c8d, #6b72f0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    box-shadow: 0 0 15px rgba(255, 92, 141, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
-/* Gallery Item Styling */
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #333;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effects */
-.gallery-item:hover {
-    transform: scale(1.05);
-}
-
-.gallery-item:hover img {
+.download-btn:hover {
     transform: scale(1.1);
-}
-
-/* Overlay Styling */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    text-align: center;
-    padding: 20px;
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
-}
-
-.overlay p {
-    font-size: 1.5rem;
-    font-weight: bold;
+    box-shadow: 0 0 25px rgba(255, 92, 141, 1);
 }
 
 /* Contact Section */
@@ -225,121 +183,6 @@ nav ul li a:hover {
 
 #contact form button:hover {
     background: #ff4d74;
-}
-
-/* Parent container for social media and email sections */
-.social-email-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
-    z-index: 1000;
-}
-
-/* Email Section */
-.email-section {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    margin-left: 20px;
-}
-
-/* Email Link Styling */
-.email-section a {
-    color: #8d42f5;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.email-section a:hover {
-    text-decoration: underline;
-}
-
-/* Social Media Section */
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-icons {
-    display: flex;
-    gap: 20px;
-}
-
-/* General Icon Style */
-.social-icon {
-    font-size: 1.5rem;
-    padding: 15px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-}
-
-/* Icon Colors */
-.youtube {
-    background-color: #8d42f5;
-    color: white;
-}
-
-.github {
-    background-color: #e0008e;
-    color: white;
-}
-
-.linkedin {
-    background-color: #6ed6f0;
-    color: white;
-}
-
-.instagram {
-    background-color: #1b1c21;
-    color: white;
-}
-
-/* Hover Effects */
-.social-icon:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Glow Effect for Hover */
-.social-icon:hover::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #ff0080, #00c6ff);
-    filter: blur(8px);
-    animation: glow 1.5s infinite;
-}
-
-/* Glow Animation */
-@keyframes glow {
-    0% {
-        transform: scale(1);
-        opacity: 0.7;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0.7;
-    }
 }
 
 /* Footer Styling */
@@ -387,27 +230,5 @@ footer p {
 
     .social-email-container a {
         font-size: 0.9rem;
-    }
-}
-
-/* For very small mobile screens (below 480px, like smaller iPhones) */
-@media (max-width: 480px) {
-    .social-icon {
-        font-size: 1.1rem;
-        padding: 8px;
-    }
-
-    .email-section {
-        font-size: 0.85rem;
-        padding: 6px 10px;
-    }
-
-    .social-icons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .email-section a {
-        font-size: 0.85rem;
     }
 }
