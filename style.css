@@ -81,45 +81,126 @@ nav ul li a:hover {
 /* About Section */
 #about {
     padding: 60px 20px;
-    background-color: #222;
+    background: #111;
+    text-align: center;
+    font-family:'Mina', sans-serif;
 }
 
 #about h2 {
-    text-align: center;
     font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff5c8d;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-family: 'Mina', sans-serif;
+}
+
+/* Futuristic Image Styling */
+.futuristic-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid transparent;
+    background-image: linear-gradient(45deg, #ff5c8d, #6b72f0);
+    background-origin: border-box;
+    background-clip: content-box;
+    box-shadow: 0 0 15px rgba(255, 92, 141, 0.6), 0 0 25px rgba(255, 92, 141, 0.8), 0 0 35px rgba(255, 92, 141, 1);
+    transition: all 0.3s ease-in-out;
     margin-bottom: 20px;
 }
 
-/* Social Media and Email Section */
-#contact #social-email .social-email-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 20px;
+.futuristic-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(255, 92, 141, 1);
 }
 
-#contact #social-email .social-media .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-#contact #social-email .email-section {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Contact Form Styling */
-#contact form {
-    margin-top: 20px;
-    padding: 20px;
+/* Work Section */
+#work {
+    padding: 60px 20px;
     background: #222;
-    border-radius: 8px;
+    text-align: center;
+}
+
+#work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #6b72f0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #111;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b72f0;
 }
 
 #contact form input,
@@ -146,16 +227,187 @@ nav ul li a:hover {
     background: #ff4d74;
 }
 
-/* Footer Section */
+/* Parent container for social media and email sections */
+.social-email-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+/* Email Section */
+.email-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+}
+
+/* Email Link Styling */
+.email-section a {
+    color: #8d42f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-section a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Section */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+/* General Icon Style */
+.social-icon {
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+/* Icon Colors */
+.youtube {
+    background-color: #8d42f5;
+    color: white;
+}
+
+.github {
+    background-color: #e0008e;
+    color: white;
+}
+
+.linkedin {
+    background-color: #6ed6f0;
+    color: white;
+}
+
+.instagram {
+    background-color: #1b1c21;
+    color: white;
+}
+
+/* Hover Effects */
+.social-icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Glow Effect for Hover */
+.social-icon:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff0080, #00c6ff);
+    filter: blur(8px);
+    animation: glow 1.5s infinite;
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+/* Footer Styling */
 footer {
-    background-color: #111;
+    background: #111;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+footer i {
+    color: #ff5c8d; /* Heart icon color */
+    margin: 0 5px;
 }
 
 footer p {
-    font-size: 1rem;
-    margin-top: 10px;
+    margin: 0;
+}
+
+/* Mobile-specific Adjustments for Social Media (move to the side) */
+@media (max-width: 768px) {
+    .email-section {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .social-email-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-email-container a {
+        font-size: 0.9rem;
+    }
+}
+
+/* For very small mobile screens (below 480px, like smaller iPhones) */
+@media (max-width: 480px) {
+    .social-icon {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+
+    .email-section {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-section a {
+        font-size: 0.85rem;
+    }
 }
